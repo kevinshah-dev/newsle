@@ -240,19 +240,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "hard",
   },
   {
-    headline: '"The Flower Queen"--Orpheum Tonight',
-    publication: "The Ogden standard",
-    date: "1917-05-07",
-    year: 1917,
-    sourceUrl: "https://www.loc.gov/resource/sn85058396/1917-05-07/ed-1/?sp=9",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:uuml:batch_uuml_indurain_ver01:data:sn85058396:print:1917050701:0434/full/pct:12.5/0/default.jpg",
-    context:
-      "A local entertainment headline for a Red Cross benefit cantata at the Orpheum.",
-    category: "Culture",
-    difficulty: "hard",
-  },
-  {
     headline: "BLOODY SLOPES STORMED BY HUNS!",
     publication: "The Ogden standard",
     date: "1918-05-15",
@@ -277,19 +264,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
       "War footage was promoted as public entertainment and patriotic instruction.",
     category: "Culture",
     difficulty: "hard",
-  },
-  {
-    headline: "THREE LOCAL BOYS ARRIVE SAFELY OVERSEAS",
-    publication: "Harrisburg telegraph",
-    date: "1918-06-05",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-06-05/ed-1/?sp=6",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028307:1918060501:0112/full/pct:12.5/0/default.jpg",
-    context:
-      "Local papers tracked hometown soldiers as U.S. forces arrived in Europe.",
-    category: "War",
-    difficulty: "medium",
   },
   {
     headline: "WOMEN TAKE PLACES OF MEN ON BALTIMORE & OHIO RAILROAD",
@@ -329,19 +303,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
       "Aviation aces became recurring personalities in late World War I coverage.",
     category: "War",
     difficulty: "medium",
-  },
-  {
-    headline: "MRS. ROSE PASTOR STOKES RECEIVES 10 YEAR SENTENCE",
-    publication: "Harrisburg telegraph",
-    date: "1918-06-01",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-06-01/ed-1/?sp=1",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028307:1918060101:0067/full/pct:12.5/0/default.jpg",
-    context:
-      "Rose Pastor Stokes was sentenced under wartime sedition-era enforcement.",
-    category: "Crime",
-    difficulty: "hard",
   },
   {
     headline: "Red Cross Flying Squadron Helps Industrial Workers",
@@ -410,19 +371,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "hard",
   },
   {
-    headline: "SUGAR MUST BE SAVED!",
-    publication: "The Evening Missourian",
-    date: "1918-06-27",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn89066315/1918-06-27/ed-1/?sp=2",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:mohi:batch_mohi_boone_ver01:data:sn89066315:00211109567:1918062701:0662/full/pct:12.5/0/default.jpg",
-    context:
-      "Food conservation campaigns were a familiar part of American home-front coverage.",
-    category: "Business",
-    difficulty: "medium",
-  },
-  {
     headline: "THE NATION'S GOING DRY.",
     publication: "The Holt County sentinel",
     date: "1917-06-01",
@@ -446,19 +394,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     context:
       "Verdun remained a potent symbol of the Western Front after the 1916 battle.",
     category: "War",
-    difficulty: "hard",
-  },
-  {
-    headline: "'My Four Years in Germany",
-    publication: "Harrisburg telegraph",
-    date: "1918-05-23",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-05-23/ed-1/?sp=14",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028290:1918052301:1010/full/pct:12.5/0/default.jpg",
-    context:
-      "James W. Gerard's wartime memoir was serialized and promoted in newspapers.",
-    category: "Culture",
     difficulty: "hard",
   },
   {
@@ -501,19 +436,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "hard",
   },
   {
-    headline: '"ORDERED THAT COAL YET?"',
-    publication: "Evening public ledger",
-    date: "1918-05-31",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn83045211/1918-05-31/ed-1/?sp=12",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_geary_ver01:data:sn83045211:00237282462:1918053101:0235/full/pct:12.5/0/default.jpg",
-    context:
-      "Coal supply and household fuel planning were everyday business concerns in wartime.",
-    category: "Business",
-    difficulty: "hard",
-  },
-  {
     headline: "THE CHEERFUL CHERUB",
     publication: "Evening public ledger",
     date: "1917-08-28",
@@ -524,19 +446,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     context:
       "A comic feature headline from the illustrated culture pages of the Evening Public Ledger.",
     category: "Culture",
-    difficulty: "hard",
-  },
-  {
-    headline: "TECH HIGH SQUAD HAS HARD SCRIMMAGE AT ISLAND",
-    publication: "Harrisburg telegraph",
-    date: "1917-09-26",
-    year: 1917,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1917-09-26/ed-1/?sp=8",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028265:1917092601:0142/full/pct:12.5/0/default.jpg",
-    context:
-      "High school football practice made the local sports pages in Harrisburg.",
-    category: "Sports",
     difficulty: "hard",
   },
   {
@@ -553,19 +462,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "hard",
   },
   {
-    headline: "Johnny Evers Chosen to Manage Baseball at Front",
-    publication: "Harrisburg telegraph",
-    date: "1918-06-05",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-06-05/ed-1/?sp=11",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028307:1918060501:0117/full/pct:12.5/0/default.jpg",
-    context:
-      "Baseball celebrities were folded into soldier recreation and morale work during World War I.",
-    category: "Sports",
-    difficulty: "hard",
-  },
-  {
     headline: "EDDIE PLANK IN THE BOX",
     publication: "Harrisburg telegraph",
     date: "1918-06-01",
@@ -575,19 +471,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
       "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028307:1918060101:0077/full/pct:12.5/0/default.jpg",
     context:
       "Eddie Plank, a Hall of Fame pitcher, still drew sports-page attention in 1918.",
-    category: "Sports",
-    difficulty: "hard",
-  },
-  {
-    headline: "MOVIE OF A MAN THE DAY BEFORE HE PLAYS GOLF",
-    publication: "Harrisburg telegraph",
-    date: "1918-06-01",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-06-01/ed-1/?sp=6",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028307:1918060101:0072/full/pct:12.5/0/default.jpg",
-    context:
-      "A light sports comic headline from a Harrisburg Telegraph feature page.",
     category: "Sports",
     difficulty: "hard",
   },
@@ -823,6 +706,34 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
       "Newspapers tracked Charles Lindbergh's solo transatlantic flight as he approached Paris.",
     category: "Technology",
     difficulty: "easy",
+  },
+  {
+    headline: "LOSS OF THE SHUTTLE: THE OVERVIEW; SHUTTLE BREAKS UP, 7 DEAD",
+    publication: "New York Times",
+    date: "2003-02-02",
+    year: 2003,
+    sourceUrl:
+      "https://www.nytimes.com/2003/02/02/us/loss-of-the-shuttle-the-overview-shuttle-breaks-up-7-dead.html",
+    pageImageUrl:
+      "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_hines_ver01:data:sn83045462:00280659721:1927052101:0592/full/pct:3.125/0/default.jpg",
+    context:
+      "The Space Shuttle Columbia broke upon atmospheric re-entry, killing all seven crew members",
+    category: "Disaster",
+    difficulty: "easy",
+  },
+  {
+    headline: "Blasts at Boston Marathon Kill 3 and Injure 100",
+    publication: "New York Times",
+    date: "2013-04-16",
+    year: 2013,
+    sourceUrl:
+      "https://www.nytimes.com/2013/04/16/us/explosions-reported-at-site-of-boston-marathon.html",
+    pageImageUrl:
+      "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_hines_ver01:data:sn83045462:00280659721:1927052101:0592/full/pct:3.125/0/default.jpg",
+    context:
+      "Two pressure-cooker bombs detonated near the Boston Marathon finish line on April 15, 2013, resulting in three fatalities and over 260 injuries",
+    category: "Crime",
+    difficulty: "medium",
   },
 ];
 
