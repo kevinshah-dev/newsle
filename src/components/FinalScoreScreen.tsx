@@ -4,6 +4,7 @@ import { getRating, MAX_SCORE } from "@/lib/scoring";
 import { findHeadlineById, totalScore } from "@/lib/game";
 import { ShareButton } from "@/components/ShareButton";
 import { ScoreBadge } from "@/components/ScoreBadge";
+import { ClerkAuthControls } from "@/components/ClerkAuthControls";
 
 type FinalScoreScreenProps = {
   state: GameState;
@@ -30,6 +31,9 @@ export function FinalScoreScreen({
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-5 py-6 sm:px-8">
+      <nav className="flex justify-end py-2" aria-label="Account">
+        <ClerkAuthControls />
+      </nav>
       <section className="grid gap-6">
         <div className="rounded-[1.5rem] border border-neutral-950 bg-[#fff7e4] p-6 text-center shadow-[8px_8px_0_#111] sm:p-8">
           <p className="text-sm font-black uppercase tracking-[0.22em] text-[#d94f30]">

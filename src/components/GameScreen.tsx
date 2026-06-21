@@ -6,6 +6,7 @@ import { findHeadlineById, totalScore } from "@/lib/game"
 import { MAX_ROUNDS } from "@/lib/scoring"
 import { GuessForm } from "@/components/GuessForm"
 import { HeadlineCard } from "@/components/HeadlineCard"
+import { ClerkAuthControls } from "@/components/ClerkAuthControls"
 import { ScoreBadge } from "@/components/ScoreBadge"
 
 type GameScreenProps = {
@@ -33,12 +34,13 @@ export function GameScreen({ state, headlines, onGuess, onHome, revealedGuess }:
           <ArrowLeft size={17} aria-hidden />
           Home
         </button>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center justify-end gap-3">
           <div className="inline-flex items-center gap-2 rounded-full border border-neutral-950 bg-white px-4 py-2 font-black text-neutral-950 shadow-[3px_3px_0_#111]">
             <Trophy size={17} aria-hidden />
             Headline {roundNumber} of {MAX_ROUNDS}
           </div>
           <ScoreBadge score={score} compact />
+          <ClerkAuthControls />
         </div>
       </header>
 

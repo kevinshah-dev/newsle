@@ -1,4 +1,5 @@
 import { CalendarDays, Dices, Newspaper } from "lucide-react";
+import { ClerkAuthControls } from "@/components/ClerkAuthControls";
 
 type LandingScreenProps = {
   onPlayDaily: () => void;
@@ -13,6 +14,9 @@ export function LandingScreen({
 }: LandingScreenProps) {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-5 py-5 sm:px-8">
+      <nav className="flex justify-end py-2" aria-label="Account">
+        <ClerkAuthControls />
+      </nav>
       <section className="grid flex-1 items-center gap-8 py-8 lg:grid-cols-[1fr_0.82fr]">
         <div className="space-y-7">
           <div className="inline-flex items-center gap-2 rounded-full border border-neutral-900 bg-[#fff7e4] px-4 py-2 text-sm font-black uppercase tracking-[0.18em] shadow-[3px_3px_0_#111]">

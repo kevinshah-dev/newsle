@@ -1,5 +1,10 @@
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+const clerkPublishableKey =
+  process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY ||
+  "pk_test_cmVsYXRlZC1zd2lmdC02NS5jbGVyay5hY2NvdW50cy5kZXYk";
 
 export const metadata: Metadata = {
   title: "Newsle",
@@ -17,7 +22,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ClerkProvider publishableKey={clerkPublishableKey}>{children}</ClerkProvider>
+      </body>
     </html>
   );
 }
