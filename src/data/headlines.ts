@@ -694,20 +694,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "medium",
   },
   {
-    headline: "LINDBERGH IS FLYING OVER FRENCH SOIL",
-    publication: "Evening star (Washington, D.C.)",
-    date: "1927-05-21",
-    year: 1927,
-    sourceUrl:
-      "https://www.loc.gov/resource/sn83045462/1927-05-21/ed-1/?sp=1&q=lindbergh+flying+french+soil",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_hines_ver01:data:sn83045462:00280659721:1927052101:0592/full/pct:3.125/0/default.jpg",
-    context:
-      "Newspapers tracked Charles Lindbergh's solo transatlantic flight as he approached Paris.",
-    category: "Technology",
-    difficulty: "easy",
-  },
-  {
     headline: "LOSS OF THE SHUTTLE: THE OVERVIEW; SHUTTLE BREAKS UP, 7 DEAD",
     publication: "New York Times",
     date: "2003-02-02",
