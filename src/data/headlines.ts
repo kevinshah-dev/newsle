@@ -30,19 +30,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "easy",
   },
   {
-    headline: "BIG LINER GOES DOWN OFF IRISH COAST; THINK PASSENGERS ARE SAFE",
-    publication: "Evening star",
-    date: "1915-05-07",
-    year: 1915,
-    sourceUrl: "https://www.loc.gov/resource/sn83045462/1915-05-07/ed-1/?sp=1",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_ixtl_ver01:data:sn83045462:00280658649:1915050701:0700/full/pct:12.5/0/default.jpg",
-    context:
-      "Early reports on the Lusitania disaster still carried uncertainty about passenger survival.",
-    category: "Disaster",
-    difficulty: "medium",
-  },
-  {
     headline: "ARMISTICE NOW SIGNED; HOSTILITIES HAVE ENDED",
     publication: "Harrisburg telegraph",
     date: "1918-11-11",
@@ -54,19 +41,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
       "This peace extra announced the armistice that ended fighting in World War I.",
     category: "War",
     difficulty: "easy",
-  },
-  {
-    headline: "SURRENDER OF ENEMY ARMIES ENDS THE WAR",
-    publication: "Harrisburg telegraph",
-    date: "1918-11-11",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-11-11/ed-1/?sp=1",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_hershey_ver01:data:sn85038411:00296028320:1918111101:0277/full/pct:12.5/0/default.jpg",
-    context:
-      "The Harrisburg Telegraph framed the armistice as the surrender that closed the war.",
-    category: "War",
-    difficulty: "medium",
   },
   {
     headline:
@@ -94,19 +68,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
       "Charles Lindbergh was nearing Paris during his solo transatlantic flight.",
     category: "Technology",
     difficulty: "easy",
-  },
-  {
-    headline: "FLYER CROSSES SEA ON SCHEDULE TIME; NOW CLOSE TO GOAL",
-    publication: "Evening star",
-    date: "1927-05-21",
-    year: 1927,
-    sourceUrl: "https://www.loc.gov/resource/sn83045462/1927-05-21/ed-1/?sp=1",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_hines_ver01:data:sn83045462:00280659721:1927052101:0592/full/pct:12.5/0/default.jpg",
-    context:
-      "The Star tracked Lindbergh's progress before the Spirit of St. Louis landed at Le Bourget.",
-    category: "Technology",
-    difficulty: "medium",
   },
   {
     headline: "HINDENBURG DEATH LIST SET AT 30 AS PROBERS GATHER TO FIX CAUSE",
@@ -305,19 +266,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "medium",
   },
   {
-    headline: "Red Cross Flying Squadron Helps Industrial Workers",
-    publication: "Harrisburg telegraph",
-    date: "1918-05-21",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-05-21/ed-1/?sp=12",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028290:1918052101:0976/full/pct:12.5/0/default.jpg",
-    context:
-      "Red Cross organizers toured industrial sites to support wartime relief work.",
-    category: "Business",
-    difficulty: "hard",
-  },
-  {
     headline: "FRENCH RESISTANCE BALKS FOE'S PLANS",
     publication: "Evening public ledger",
     date: "1918-06-13",
@@ -397,19 +345,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "hard",
   },
   {
-    headline: "BERLIN BUTTER RATION",
-    publication: "The weekly tribune and the Cape County herald",
-    date: "1918-01-04",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn89066617/1918-01-04/ed-1/?sp=2",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:mohi:batch_mohi_imogen_ver01:data:sn89066617:00200292315:1918010401:0204/full/pct:12.5/0/default.jpg",
-    context:
-      "Food shortages and rationing inside Germany were recurring Allied newspaper items.",
-    category: "World",
-    difficulty: "hard",
-  },
-  {
     headline: "SCENES OF TODAY ON GETTYSBURG'S HISTORIC BATTLE GROUND",
     publication: "The Ogden standard",
     date: "1917-08-02",
@@ -475,71 +410,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     difficulty: "hard",
   },
   {
-    headline: "THE DAYS OF REAL SPORT",
-    publication: "Harrisburg telegraph",
-    date: "1917-08-16",
-    year: 1917,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1917-08-16/ed-1/?sp=8",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028253:1917081601:0580/full/pct:12.5/0/default.jpg",
-    context:
-      "Newspaper comics made sport and leisure part of the daily paper's rhythm.",
-    category: "Sports",
-    difficulty: "hard",
-  },
-  {
-    headline: "YOUNGSTERS LEARN COOKING AT DOMESTIC SCHOOL",
-    publication: "Harrisburg telegraph",
-    date: "1917-07-27",
-    year: 1917,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1917-07-27/ed-1/?sp=1",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028253:1917072701:0329/full/pct:12.5/0/default.jpg",
-    context:
-      "Domestic education and food skills were local-news staples during the era.",
-    category: "Culture",
-    difficulty: "hard",
-  },
-  {
-    headline: "LEADER OF CINCINNATI REDS",
-    publication: "The weekly tribune and the Cape County herald",
-    date: "1918-05-10",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn89066617/1918-05-10/ed-1/?sp=4",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:mohi:batch_mohi_imogen_ver01:data:sn89066617:00200292315:1918051001:0300/full/pct:12.5/0/default.jpg",
-    context:
-      "Baseball leaders and player portraits traveled widely through syndicated newspaper features.",
-    category: "Sports",
-    difficulty: "hard",
-  },
-  {
-    headline: "CHICKEN FANCIER MAKES STEAM HEATED BROODER",
-    publication: "The Evening Missourian",
-    date: "1918-04-12",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn89066315/1918-04-12/ed-1/?sp=3",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:mohi:batch_mohi_boone_ver01:data:sn89066315:00211109567:1918041201:0369/full/pct:12.5/0/default.jpg",
-    context:
-      "Agricultural innovation and home production had practical local-news value.",
-    category: "Technology",
-    difficulty: "hard",
-  },
-  {
-    headline: "ARRIVES SAFELY ON OTHER SIDE",
-    publication: "Harrisburg telegraph",
-    date: "1918-05-20",
-    year: 1918,
-    sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-05-20/ed-1/?sp=6",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_greenberg_ver01:data:sn85038411:00296028290:1918052001:0954/full/pct:12.5/0/default.jpg",
-    context:
-      "Families watched local papers for confirmation that soldiers had reached Europe safely.",
-    category: "War",
-    difficulty: "hard",
-  },
-  {
     headline: 'COULDN\'T "KID" THE ARMY',
     publication: "Evening public ledger",
     date: "1918-09-03",
@@ -549,19 +419,6 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
       "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_geary_ver01:data:sn83045211:00237282504:1918090301:0711/full/pct:12.5/0/default.jpg",
     context:
       "A wartime comic headline from the Evening Public Ledger's illustrated pages.",
-    category: "Culture",
-    difficulty: "hard",
-  },
-  {
-    headline: "EVERYDAY ETIQUETTE",
-    publication: "The Ogden standard",
-    date: "1917-05-23",
-    year: 1917,
-    sourceUrl: "https://www.loc.gov/resource/sn85058396/1917-05-23/ed-1/?sp=5",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:uuml:batch_uuml_indurain_ver01:data:sn85058396:print:1917052301:0634/full/pct:12.5/0/default.jpg",
-    context:
-      "Etiquette columns were recurring lifestyle fixtures in early twentieth-century newspapers.",
     category: "Culture",
     difficulty: "hard",
   },
