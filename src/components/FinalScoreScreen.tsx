@@ -2,6 +2,7 @@ import { Dices, RotateCcw } from "lucide-react";
 import type { GameState, Headline } from "@/types/headline";
 import { getRating, MAX_SCORE } from "@/lib/scoring";
 import { findHeadlineById, totalScore } from "@/lib/game";
+import { useScoreSubmission } from "@/lib/statsRecorder";
 import { ShareButton } from "@/components/ShareButton";
 import { ScoreBadge } from "@/components/ScoreBadge";
 import { ClerkAuthControls } from "@/components/ClerkAuthControls";
@@ -23,11 +24,32 @@ export function FinalScoreScreen({
 }: FinalScoreScreenProps) {
   const score = totalScore(state.guesses);
   const rating = getRating(score);
+  const playedOn = state.date ?? today;
   const label = state.mode === "daily" ? `#${state.date ?? today}` : "Practice";
   const shareText =
     state.mode === "daily"
       ? `Newsle #${state.date ?? today}: ${score.toLocaleString()}/${MAX_SCORE.toLocaleString()}`
       : `Newsle Practice: ${score.toLocaleString()}/${MAX_SCORE.toLocaleString()}`;
+
+  useScoreSubmission(
+    state.mode === "daily"
+      ? {
+          gameId: "newsle",
+          mode: "daily",
+          score,
+          maxScore: MAX_SCORE,
+          playedOn,
+          idempotencyKey: playedOn,
+          metadata: {
+            guesses: state.guesses.map((guess) => ({
+              headlineId: guess.headlineId,
+              yearsOff: guess.yearsOff,
+              points: guess.points,
+            })),
+          },
+        }
+      : null,
+  );
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col px-5 py-6 sm:px-8">
