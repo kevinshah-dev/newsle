@@ -2,7 +2,11 @@ import type { Headline } from "@/types/headline";
 
 const ARCHIVE_NAME = "Library of Congress / Chronicling America";
 
-const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
+type SourceHeadline = Omit<Headline, "id" | "archiveName"> & {
+  archiveName?: string;
+};
+
+const sourceHeadlines: SourceHeadline[] = [
   {
     headline: "SAN FRANCISCO DEVASTATED",
     publication: "New-York tribune",
@@ -557,10 +561,9 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     year: 2003,
     sourceUrl:
       "https://www.nytimes.com/2003/02/02/us/loss-of-the-shuttle-the-overview-shuttle-breaks-up-7-dead.html",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_hines_ver01:data:sn83045462:00280659721:1927052101:0592/full/pct:3.125/0/default.jpg",
+    archiveName: "New York Times",
     context:
-      "The Space Shuttle Columbia broke upon atmospheric re-entry, killing all seven crew members",
+      "The Space Shuttle Columbia broke apart during atmospheric re-entry, killing all seven crew members.",
     category: "Disaster",
     difficulty: "easy",
   },
@@ -571,11 +574,294 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
     year: 2013,
     sourceUrl:
       "https://www.nytimes.com/2013/04/16/us/explosions-reported-at-site-of-boston-marathon.html",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_hines_ver01:data:sn83045462:00280659721:1927052101:0592/full/pct:3.125/0/default.jpg",
+    archiveName: "New York Times",
     context:
-      "Two pressure-cooker bombs detonated near the Boston Marathon finish line on April 15, 2013, resulting in three fatalities and over 260 injuries",
+      "Two bombs detonated near the Boston Marathon finish line, killing three people and injuring hundreds more.",
     category: "Crime",
+    difficulty: "medium",
+  },
+  {
+    headline:
+      "Reagan Wounded by Assailant's Bullet; Prognosis Is 'Excellent'; 3 Others Shot",
+    publication: "The Washington Post",
+    date: "1981-03-31",
+    year: 1981,
+    sourceUrl:
+      "https://www.washingtonpost.com/local/reagan-wounded-by-assailants-bullet-prognosis-is-excellent-3-others-shot/2011/12/09/gIQAVusviO_story.html",
+    archiveName: "The Washington Post",
+    context:
+      "The Washington Post republished its original coverage of the assassination attempt on President Ronald Reagan.",
+    category: "Crime",
+    difficulty: "medium",
+  },
+  {
+    headline: "Apple Introduces Innovative Cellphone",
+    publication: "New York Times",
+    date: "2007-01-10",
+    year: 2007,
+    sourceUrl: "https://www.nytimes.com/2007/01/10/technology/10apple.html",
+    archiveName: "New York Times",
+    context:
+      "Apple's first iPhone announcement reshaped consumer expectations for mobile phones.",
+    category: "Technology",
+    difficulty: "easy",
+  },
+  {
+    headline: "Obama Elected President as Racial Barrier Falls",
+    publication: "New York Times",
+    date: "2008-11-05",
+    year: 2008,
+    sourceUrl: "https://www.nytimes.com/2008/11/05/us/politics/05elect.html",
+    archiveName: "New York Times",
+    context:
+      "Barack Obama became the first Black president-elect of the United States.",
+    category: "Politics",
+    difficulty: "easy",
+  },
+  {
+    headline: "Lehman Files for Biggest Bankruptcy in U.S. After Suitors Balk",
+    publication: "Bloomberg",
+    date: "2008-09-15",
+    year: 2008,
+    sourceUrl:
+      "https://www.bloomberg.com/news/articles/2008-09-15/lehman-files-for-biggest-bankruptcy-in-u-s-after-suitors-balk",
+    archiveName: "Bloomberg",
+    context:
+      "Lehman Brothers' collapse became a defining event of the global financial crisis.",
+    category: "Business",
+    difficulty: "easy",
+  },
+  {
+    headline: "NASA Confirms Evidence That Liquid Water Flows on Today's Mars",
+    publication: "NASA",
+    date: "2015-09-28",
+    year: 2015,
+    sourceUrl:
+      "https://www.nasa.gov/news-release/nasa-confirms-evidence-that-liquid-water-flows-on-todays-mars/",
+    archiveName: "NASA",
+    context:
+      "NASA announced evidence that salty liquid water flows intermittently on present-day Mars.",
+    category: "Science",
+    difficulty: "medium",
+  },
+  {
+    headline: "Supreme Court Declares Same-Sex Marriage Legal In All 50 States",
+    publication: "NPR",
+    date: "2015-06-26",
+    year: 2015,
+    sourceUrl:
+      "https://www.npr.org/sections/thetwo-way/2015/06/26/417717613/supreme-court-rules-all-states-must-allow-same-sex-marriages",
+    archiveName: "NPR",
+    context:
+      "The Supreme Court's Obergefell decision required states to license and recognize same-sex marriages.",
+    category: "Politics",
+    difficulty: "easy",
+  },
+  {
+    headline: "It happened! Cubs win epic Game 7 to end Series drought",
+    publication: "Associated Press",
+    date: "2016-11-03",
+    year: 2016,
+    sourceUrl: "https://apnews.com/general-news-ac4871e46f804b419784b963cedc19c9",
+    archiveName: "AP News",
+    context:
+      "The Chicago Cubs won their first World Series championship since 1908.",
+    category: "Sports",
+    difficulty: "easy",
+  },
+  {
+    headline: "Amazon to buy Whole Foods Market in deal valued at $13.7 billion",
+    publication: "The Washington Post",
+    date: "2017-06-16",
+    year: 2017,
+    sourceUrl:
+      "https://www.washingtonpost.com/news/business/wp/2017/06/16/amazon-to-buy-whole-foods-market-in-deal-valued-at-13-7-billion-2/",
+    archiveName: "The Washington Post",
+    context:
+      "Amazon's acquisition of Whole Foods expanded the company's reach into physical grocery retail.",
+    category: "Business",
+    difficulty: "medium",
+  },
+  {
+    headline: "'Black Panther' Smashes Box Office Records with $218 Million Opening",
+    publication: "Variety",
+    date: "2018-02-18",
+    year: 2018,
+    sourceUrl:
+      "https://variety.com/2018/film/box-office/black-panther-record-opening-box-office-1202703676/",
+    archiveName: "Variety",
+    context:
+      "The Marvel film's opening weekend became a major commercial and cultural milestone.",
+    category: "Culture",
+    difficulty: "medium",
+  },
+  {
+    headline: "Hollywood Celebrates 'Parasite' Historic Oscar Best Picture Win",
+    publication: "Variety",
+    date: "2020-02-10",
+    year: 2020,
+    sourceUrl:
+      "https://variety.com/2020/film/box-office/parasite-oscars-best-picture-hollywood-reacts-1203498793/",
+    archiveName: "Variety",
+    context:
+      "Bong Joon Ho's film became the first non-English-language movie to win the best picture Oscar.",
+    category: "Culture",
+    difficulty: "medium",
+  },
+  {
+    headline: "Coronavirus: COVID-19 Is Now Officially A Pandemic, WHO Says",
+    publication: "NPR",
+    date: "2020-03-11",
+    year: 2020,
+    sourceUrl:
+      "https://www.npr.org/sections/goatsandsoda/2020/03/11/814474930/coronavirus-covid-19-is-now-officially-a-pandemic-who-says",
+    archiveName: "NPR",
+    context:
+      "The World Health Organization characterized the COVID-19 outbreak as a global pandemic.",
+    category: "Science",
+    difficulty: "easy",
+  },
+  {
+    headline: "Biden defeats Trump for White House, says 'time to heal'",
+    publication: "Associated Press",
+    date: "2020-11-08",
+    year: 2020,
+    sourceUrl:
+      "https://apnews.com/article/joe-biden-wins-white-house-ap-fd58df73aa677acb74fce2a69adb71f9",
+    archiveName: "AP News",
+    context:
+      "The Associated Press called the presidential election for Joe Biden after days of vote counting.",
+    category: "Politics",
+    difficulty: "easy",
+  },
+  {
+    headline: "NASA's Perseverance Rover Lands Successfully on Mars",
+    publication: "NASA",
+    date: "2021-02-18",
+    year: 2021,
+    sourceUrl:
+      "https://science.nasa.gov/resource/nasas-perseverance-rover-lands-successfully-on-mars/",
+    archiveName: "NASA",
+    context:
+      "The Perseverance rover touched down in Jezero Crater to search for signs of ancient microbial life.",
+    category: "Science",
+    difficulty: "medium",
+  },
+  {
+    headline: "Jury's swift verdict for Chauvin in Floyd death: Guilty",
+    publication: "Associated Press",
+    date: "2021-04-21",
+    year: 2021,
+    sourceUrl:
+      "https://apnews.com/article/derek-chauvin-convicted-george-floyd-killing-d93d1f9fc61a5261e179240dc16924dc",
+    archiveName: "AP News",
+    context:
+      "Former Minneapolis police officer Derek Chauvin was convicted in George Floyd's murder.",
+    category: "Crime",
+    difficulty: "medium",
+  },
+  {
+    headline: "Taliban sweep into Afghan capital after government collapses",
+    publication: "Associated Press",
+    date: "2021-08-16",
+    year: 2021,
+    sourceUrl:
+      "https://apnews.com/article/afghanistan-taliban-kabul-bagram-e1ed33fe0c665ee67ba132c51b8e32a5",
+    archiveName: "AP News",
+    context:
+      "The Taliban entered Kabul as Afghanistan's U.S.-backed government fell.",
+    category: "War",
+    difficulty: "medium",
+  },
+  {
+    headline: "Death toll of powerful earthquake in Haiti soars to 1,297",
+    publication: "Associated Press",
+    date: "2021-08-16",
+    year: 2021,
+    sourceUrl:
+      "https://apnews.com/article/haiti-earthquake-98f06a322e12f732f94485238d13558c",
+    archiveName: "AP News",
+    context:
+      "A major earthquake struck Haiti's Tiburon Peninsula and caused widespread damage.",
+    category: "Disaster",
+    difficulty: "medium",
+  },
+  {
+    headline: "Facebook just revealed its new name: Meta",
+    publication: "The Verge",
+    date: "2021-10-28",
+    year: 2021,
+    sourceUrl:
+      "https://www.theverge.com/2021/10/28/22745234/facebook-new-name-meta-metaverse-zuckerberg-rebrand",
+    archiveName: "The Verge",
+    context:
+      "Facebook renamed its parent company Meta as Mark Zuckerberg emphasized metaverse products.",
+    category: "Technology",
+    difficulty: "easy",
+  },
+  {
+    headline: "Russia attacks Ukraine as defiant Putin warns US, NATO",
+    publication: "Associated Press",
+    date: "2022-02-24",
+    year: 2022,
+    sourceUrl:
+      "https://apnews.com/article/russia-ukraine-europe-russia-moscow-kyiv-626a8c5ec22217bacb24ece60fac4fe1",
+    archiveName: "AP News",
+    context:
+      "Russia launched a large-scale invasion of Ukraine after months of military buildup.",
+    category: "War",
+    difficulty: "easy",
+  },
+  {
+    headline: "NASA's Webb Delivers Deepest Infrared Image of Universe Yet",
+    publication: "NASA",
+    date: "2022-07-12",
+    year: 2022,
+    sourceUrl:
+      "https://science.nasa.gov/missions/webb/nasas-webb-delivers-deepest-infrared-image-of-universe-yet/",
+    archiveName: "NASA",
+    context:
+      "The James Webb Space Telescope released its first deep-field image of distant galaxies.",
+    category: "Science",
+    difficulty: "medium",
+  },
+  {
+    headline: "Queen Elizabeth dead at 96 after more than 7 decades on throne",
+    publication: "Associated Press",
+    date: "2022-09-08",
+    year: 2022,
+    sourceUrl:
+      "https://apnews.com/article/queen-elizabeth-ii-health-update-b2578aa91c3fef9c5d6ad4a557bf63e4",
+    archiveName: "AP News",
+    context:
+      "Queen Elizabeth II died after the longest reign in British history.",
+    category: "World",
+    difficulty: "easy",
+  },
+  {
+    headline: "Messi wins World Cup, Argentina beats France on penalties",
+    publication: "Associated Press",
+    date: "2022-12-18",
+    year: 2022,
+    sourceUrl:
+      "https://apnews.com/article/lionel-messi-argentina-win-world-cup-final-against-france-e13fc1886725a0fe4f9e053e16a061bc",
+    archiveName: "AP News",
+    context:
+      "Argentina defeated France in a shootout after a dramatic World Cup final.",
+    category: "Sports",
+    difficulty: "easy",
+  },
+  {
+    headline: "Taylor Swift's 'The Eras Tour' Becomes Highest-Grossing Concert Film",
+    publication: "Variety",
+    date: "2024-01-08",
+    year: 2024,
+    sourceUrl:
+      "https://variety.com/2024/film/news/taylor-swifts-the-eras-tour-highest-grossing-theatrical-concert-film-1235863956/",
+    archiveName: "Variety",
+    context:
+      "The concert film broke theatrical box-office records for its genre.",
+    category: "Culture",
     difficulty: "medium",
   },
 ];
@@ -583,5 +869,5 @@ const sourceHeadlines: Omit<Headline, "id" | "archiveName">[] = [
 export const headlines: Headline[] = sourceHeadlines.map((headline, index) => ({
   ...headline,
   id: `headline-${String(index + 1).padStart(3, "0")}`,
-  archiveName: ARCHIVE_NAME,
+  archiveName: headline.archiveName ?? ARCHIVE_NAME,
 }));
