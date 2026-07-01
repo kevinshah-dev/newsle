@@ -375,19 +375,6 @@ const sourceHeadlines: SourceHeadline[] = [
     difficulty: "hard",
   },
   {
-    headline: "THE CHEERFUL CHERUB",
-    publication: "Evening public ledger",
-    date: "1917-08-28",
-    year: 1917,
-    sourceUrl: "https://www.loc.gov/resource/sn83045211/1917-08-28/ed-1/?sp=6",
-    pageImageUrl:
-      "https://tile.loc.gov/image-services/iiif/service:ndnp:pst:batch_pst_davey_ver01:data:sn83045211:0023728768A:1917082801:0608/full/pct:12.5/0/default.jpg",
-    context:
-      "A comic feature headline from the illustrated culture pages of the Evening Public Ledger.",
-    category: "Culture",
-    difficulty: "hard",
-  },
-  {
     headline: "TILLMAN, FIERY SOUTH CAROLINA SENATOR, IS DEAD",
     publication: "Harrisburg Telegraph",
     date: "1918-07-03",
@@ -662,7 +649,8 @@ const sourceHeadlines: SourceHeadline[] = [
     publication: "Associated Press",
     date: "2016-11-03",
     year: 2016,
-    sourceUrl: "https://apnews.com/general-news-ac4871e46f804b419784b963cedc19c9",
+    sourceUrl:
+      "https://apnews.com/general-news-ac4871e46f804b419784b963cedc19c9",
     archiveName: "AP News",
     context:
       "The Chicago Cubs won their first World Series championship since 1908.",
@@ -670,7 +658,8 @@ const sourceHeadlines: SourceHeadline[] = [
     difficulty: "easy",
   },
   {
-    headline: "Amazon to buy Whole Foods Market in deal valued at $13.7 billion",
+    headline:
+      "Amazon to buy Whole Foods Market in deal valued at $13.7 billion",
     publication: "The Washington Post",
     date: "2017-06-16",
     year: 2017,
@@ -683,7 +672,8 @@ const sourceHeadlines: SourceHeadline[] = [
     difficulty: "medium",
   },
   {
-    headline: "'Black Panther' Smashes Box Office Records with $218 Million Opening",
+    headline:
+      "'Black Panther' Smashes Box Office Records with $218 Million Opening",
     publication: "Variety",
     date: "2018-02-18",
     year: 2018,
@@ -852,7 +842,8 @@ const sourceHeadlines: SourceHeadline[] = [
     difficulty: "easy",
   },
   {
-    headline: "Taylor Swift's 'The Eras Tour' Becomes Highest-Grossing Concert Film",
+    headline:
+      "Taylor Swift's 'The Eras Tour' Becomes Highest-Grossing Concert Film",
     publication: "Variety",
     date: "2024-01-08",
     year: 2024,
