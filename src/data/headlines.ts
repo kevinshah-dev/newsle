@@ -35,7 +35,7 @@ const sourceHeadlines: SourceHeadline[] = [
   },
   {
     headline: "ARMISTICE NOW SIGNED; HOSTILITIES HAVE ENDED",
-    publication: "Harrisburg telegraph",
+    publication: "Harrisburg Telegraph",
     date: "1918-11-11",
     year: 1918,
     sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-11-11/ed-1/?sp=1",
@@ -258,7 +258,7 @@ const sourceHeadlines: SourceHeadline[] = [
   },
   {
     headline: 'American "Ace" Bags Ninth Enemy Plane',
-    publication: "Harrisburg telegraph",
+    publication: "Harrisburg Telegraph",
     date: "1918-05-20",
     year: 1918,
     sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-05-20/ed-1/?sp=3",
@@ -311,7 +311,7 @@ const sourceHeadlines: SourceHeadline[] = [
   },
   {
     headline: "JEWS ARE ZEALOUS TO ENLIST FOR PALESTINE SERVICE WITH BRITISH",
-    publication: "Harrisburg telegraph",
+    publication: "Harrisburg Telegraph",
     date: "1918-05-20",
     year: 1918,
     sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-05-20/ed-1/?sp=3",
@@ -389,7 +389,7 @@ const sourceHeadlines: SourceHeadline[] = [
   },
   {
     headline: "EDDIE PLANK IN THE BOX",
-    publication: "Harrisburg telegraph",
+    publication: "Harrisburg Telegraph",
     date: "1918-06-01",
     year: 1918,
     sourceUrl: "https://www.loc.gov/resource/sn85038411/1918-06-01/ed-1/?sp=11",
